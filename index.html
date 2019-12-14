@@ -1,0 +1,72 @@
+<!doctype html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+	<script src="js/newindex.js"></script>
+	 <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/newindex.css">
+</head>
+<body >
+<div class="main_parent" title="main_block">
+<div id="mySidenav" class="sidenav">
+<div style="margin-top:44px;">
+<a class="hello1 active" title="Play" style="
+    padding-bottom: 8px;
+    display: inline-flex;" href="index.html"><i class="fas fa-gamepad"></i><span>Play</span></a>
+ <a class="hello" title="Instruction" style="
+    padding-bottom: 8px;
+    display: inline-flex;"  href="introduction.html"><i class="fas fa-info-circle"></i><span>Instructions</span></a>
+ <a class="hello" title="History" style="
+    padding-bottom: 8px;
+    display: inline-flex;" href="history.html" style="margin-left:4px;"><i class="fas fa-history"></i><span>History</span></a>
+ </div>
+</div>
+<main>
+<header id="header">
+	<span class="navopen">&#9776;</span>
+	<strong class="tictac">Tic Tac Toe</strong>
+</header>
+<div class="overlay"></div>
+<section>
+		<button id="reset" title="reset">Reset</button>
+		<div class="tablecontainer">
+		<table class="table">
+				<tr class="tr">
+					<td class="td" id="0"></td>
+					<td class="td" id="1"></td>
+					<td  class="td" id="2"></td>
+				</tr>	
+				<tr class="tr" >
+					<td class="td" id="3"></td>
+					<td class="td" id="4"></td>
+					<td class="td" id="5"></td>
+				</tr>
+				<tr class="tr" >
+					<td class="td" id="6"></td>
+					<td class="td" id="7"></td>
+					<td class="td" id="8"></td>
+				</tr>
+			</table>
+					<hr class="done">
+					<hr id="0-8" class="done__diagonal done__diagonal--1">
+					<hr id="2-6" class="done__diagonal done__diagonal--2">
+					<hr id="3-5" class="done__line done__line--1">
+					<hr id="1-7" class="done__line done__line--2">
+					<hr id="0-2" class="done__line done__line--3">
+					<hr id="6-8" class="done__line done__line--4">
+					<hr id="0-6" class="done__line done__line--5">
+					<hr id="2-8" class="done__line done__line--6">
+			
+			</div>
+		</section>
+</main>
+</div>
+</body>

@@ -1,0 +1,56 @@
+<!doctype html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+	<script src="js/newindex.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/newindex.css">
+</head>
+<body>
+<div class="main_parent">
+<div id="mySidenav" class="sidenav">
+<div style="margin-top:44px;">
+ <a class="hello" style="
+    padding-bottom: 8px;
+    display: inline-flex;" href="index.html"><i class="fas fa-gamepad"></i><span>Play</span></a>
+ <a class="hello" style="
+    padding-bottom: 8px;
+    display: inline-flex;"  href="introduction.html"><i class="fas fa-info-circle"></i><span>Instructions</span></a>
+ <a class="hello active" style="
+    padding-bottom: 8px;
+    display: inline-flex;" href="history.html" style="margin-left:4px;"><i class="fas fa-history"></i><span>History</span></a>
+ </div>
+</div>
+<main>
+<header id="header">
+  <span class="navopen">&#9776;</span>
+  <strong class="tictac">Tic Tac Toe</strong>
+</header>
+<div class="overlay"></div>
+<div class="history_container">
+<p style=" font-size: 30px; color: white;font-family: courier;padding: 8px;
+    margin: 0;">History</p>
+    <table id="table_history">
+    <tr>
+      <th class="th_history">Players</th>
+      <th class="th_history"> Time</th>
+      </tr>
+      <script type="text/javascript">
+        result_table();
+      </script>
+    </table>
+</div>
+<button class="clear_history" style="position: fixed;right: 48px;top: 66px;font-family: courier;border-radius: 7px;">Clear History</button>
+
+</main>
+</div>
+</body>
